@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         
         calculateTip(self)
         
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,6 +60,7 @@ class ViewController: UIViewController {
         
         tipTotalContainer.alpha = 0
         
+        calculateTip(self)
         
     }
     
@@ -104,7 +107,13 @@ class ViewController: UIViewController {
         
         let defaults = UserDefaults.standard
         
-        defaults.set(bill, forKey: "billAmount")
+        if bill == 0 {
+            defaults.set("", forKey: "billAmount")
+        } else {
+            defaults.set(bill, forKey: "billAmount")
+        }
+        
+        
         
         defaults.synchronize()
         
