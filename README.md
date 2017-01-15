@@ -31,6 +31,9 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+## Walkthrough
+![](https://github.com/liangjiapei1103/tip-calculator/blob/master/tip_calculator_walkthrough.gif)
+
 ## Notes
 
 Describe any challenges encountered while building the app.
